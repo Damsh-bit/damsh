@@ -1,0 +1,152 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+
+.nav {
+  height: calc(var(--header-height) + 1.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__logo img{
+  width: 80px;
+  height: 60px;
+  margin: 0;
+}
+.nav__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+}
+
+.nav__icon,
+.nav__close,
+.nav__toggle {
+  display: none;
+}
+
+/* active link*/
+
+.active-link,
+.nav__link:hover {
+  color: var(--title-color-dark);
+  transform: scale(1.3);
+}
+
+
+/* Medium devices*/
+
+@media screen and (max-width: 768px) {
+  .header {
+    top: initial;
+    top: 0;
+  }
+
+  .nav {
+    height: var(--header-height);
+  }
+
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 1rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 1.5rem 1.5rem ;
+    transition: 2s;
+  }
+
+  .nav__logo{
+    margin-top: 0.3rem;
+  }
+
+  .nav__logo img{
+   width: 42px;
+   height: 36px;
+  }
+
+  /* show menu*/
+
+  .show-menu{
+    top: 0;
+    transition: .3s;
+  }
+
+  .nav__list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+  }
+
+  .nav__icon{
+    font-size: 1.2rem;
+  }
+
+  .nav__close{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--title-color);
+  }
+
+  .nav__close:hover{
+    color: var(--title-color-dark);
+  }
+
+  .nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  .nav__icon,
+  .nav__close,
+  .nav__toggle {
+    display: block;
+  }
+}
+
+
+/* small devices */
+
+@media screen and (max-width: 350px){
+    .nav__menu{
+        padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav__list{
+        column-gap: 0;
+    }
+}
