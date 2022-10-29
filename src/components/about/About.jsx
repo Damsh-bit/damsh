@@ -15,13 +15,13 @@ const About = () => {
   },[])
   return (
     <section className="about section" id="about">
-        <h2 data-aos="fade-down" className="section__title">Sobre mí</h2>
+        <h2 data-aos="fade-up" className="section__title">Sobre mí</h2>
         <span data-aos="fade-down" className="section__subtitle">Mi introducción</span>
 
-        <div data-aos="fade-up"  className="about__container container grid">
-          <img src={AboutImg} alt="" className="about__img" />
+        <div className="about__container container grid">
+          <img data-aos="fade-down" src={AboutImg} alt="" className="about__img" />
 
-          <div className="about__data">
+          <div data-aos="fade-down" className="about__data">
             <Info />
 
             <p className="about__description">

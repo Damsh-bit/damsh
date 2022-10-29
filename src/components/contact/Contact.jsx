@@ -82,7 +82,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button data-aos="fade-up" className="button button--flex">
+            <button className="button button--flex">
               Enviar <i className="uil uil-telegram-alt"></i>
             </button>
           </form>
