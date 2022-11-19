@@ -20,7 +20,7 @@ const Projects = () => {
   return (
     <section id="projects" className="projects section">
       <h2 data-aos="zoom-in-down" className="section__title">Proyectos</h2>
-      <span data-aos="zoom-in-down" className="section__subtitle">Mis trabajos</span>
+      <span data-aos="zoom-in-down" className="section__subtitle">Mis trabajos web</span>
 
       <div  className="projects__container container grid ">
         <div data-aos="zoom-in-up" className="project__data card">
@@ -67,7 +67,7 @@ const Projects = () => {
         <div data-aos="zoom-in-up" className="project__data card">
           <img src={Schemme} alt="project" className="project__image" />
           <div class="card-bio">
-            <p>Landing page usign React.</p>
+            <p>Landing page utilizando React.</p>
           </div>
           <h2 className="project__title">Scheme</h2>
           <span className="project__subtitle">React - HTML - JS - CSS</span>
@@ -81,7 +81,7 @@ const Projects = () => {
         <div data-aos="zoom-in-up" className="project__data card">
           <img src={Prootech} alt="project" className="project__image" />
           <div class="card-bio">
-            <p>Landing page usign React.</p>
+            <p>Landing page utilizando React.</p>
           </div>
           <h2 className="project__title">Prootech</h2>
           <span className="project__subtitle">React - HTML - JS - CSS</span>
