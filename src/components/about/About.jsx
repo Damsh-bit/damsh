@@ -15,7 +15,7 @@ const About = () => {
   },[])
   return (
     <section className="about section" id="about">
-        <h2 data-aos="fade-up" className="section__title">Sobre mi</h2>
+        <h2 data-aos="fade-up" className="section__title">Sobre mí</h2>
         <span data-aos="fade-down" className="section__subtitle">Mi introducción</span>
 
         <div className="about__container container grid">
