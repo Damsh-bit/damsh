@@ -4,6 +4,7 @@ import NATOR from "../../assets/Nator.png";
 import ToDoPage from "../../assets/ToDoPage.png";
 import Port from "../../assets/port.png";
 import pokedamsh from "../../assets/pokedamsh.png";
+import Schemme from "../../assets/schemme.png";
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -58,6 +59,20 @@ const Projects = () => {
           <div className="project__url">
           <a href="https://github.com/Damsh-bit/pokedamsh" rel="noreferrer" target="_blank">code</a>
           <a href="https://damsh-bit.github.io/pokedamsh/" rel="noreferrer" target="_blank">demo</a>
+          </div>
+          
+        </div>
+
+        <div data-aos="zoom-in-up" className="project__data card">
+          <img src={Schemme} alt="project" className="project__image" />
+          <div class="card-bio">
+            <p>Landing page usign React.</p>
+          </div>
+          <h2 className="project__title">Scheme</h2>
+          <span className="project__subtitle">React - HTML - JS - CSS</span>
+          <div className="project__url">
+          <a href="https://github.com/Damsh-bit/Scheme" rel="noreferrer" target="_blank">code</a>
+          <a href="https://schemme.netlify.app" rel="noreferrer" target="_blank">demo</a>
           </div>
           
         </div>
