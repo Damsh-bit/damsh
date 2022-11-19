@@ -4,7 +4,7 @@ import NATOR from "../../assets/Nator.png";
 import ToDoPage from "../../assets/ToDoPage.png";
 import Port from "../../assets/port.png";
 import pokedamsh from "../../assets/pokedamsh.png";
-import Schemme from "../../assets/schemme.png";
+import Schemme from "../../assets/Schemme.png";
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
