@@ -25,7 +25,7 @@ const About = () => {
             <Info />
 
             <p className="about__description">
-              Tengo 20 años, soy desarrollador frontend. Autodidacta,
+              Tengo 20 años, soy desarrollador web. Autodidacta,
               responsable y perseverante. Me dedico a crear paginas web de forma
               Freelance mientras busco mi primer trabajo como desarrollador.
             </p>
